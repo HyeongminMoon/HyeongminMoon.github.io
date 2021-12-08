@@ -9,7 +9,7 @@ For me, Development does not happen just in computer. Development means All acti
 #### *Tech Stack*
 * (Language/Script) &nbsp; **Python** &nbsp; C/C++/C# &nbsp; SQL
 * (Vision/AI Tool) &nbsp; **Pytorch Opencv** &nbsp; Tensorflow &nbsp; Onnx
-* (Platform/Framework) &nbsp; Django &nbsp; Flask &nbsp; MongoDB &nbsp; MySQL &nbsp; Redis &nbsp; Nodejs &nbsp; React
+* (Platform/Framework) &nbsp; Django &nbsp; Flask &nbsp; MongoDB &nbsp; MySQL &nbsp; &nbsp; Nodejs &nbsp;
 * (Server/Linux) &nbsp; GCP &nbsp; Docker &nbsp; Kubernetes &nbsp; Nginx &nbsp; Gunicorn &nbsp; Shell Script
 
 #### *Contact*
