@@ -1,7 +1,7 @@
 menu:
 - {name: 'people', url: '/people'}
 - {name: 'Main Projects', url: '/publications'}
-- {name: 'courses', url: '/courses'}
+- {name: 'mini projects', url: '/courses'}
 - {name: 'cv', url: '/cv'}
 - {name: 'contact', url: '/contact'}
 
