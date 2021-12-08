@@ -1,6 +1,6 @@
 featured:
 - {name: '(2021) Portrait sketch by improving segmentation model ', url: 'https://github.com/HyeongminMoon/U-2-Net_portrait_sketch'}
-- {name: 'Shock interactions, turbulence and the origin of the stellar mass spectrum. Ralph E. Pudritz and N. K.-R. Kevlahan', url: 'http://ms.mcmaster.ca/kevla/pdf/articles/PhilTransRSoc_2013.pdf'}
+- {name: '(2020) Rank search by image similarity and multi label classificaion', url: 'https://hyeongminmoon.github.io/FRCNN_trademark_similarity/'}
 - {name: 'Low shear diffusion central schemes for particle methods. Jonathan Panuelos, James Wadsley, Nicholas Kevlahan', url: 'http://ms.mcmaster.ca/kevla/pdf/articles/jcp_v414.pdf'}
 
 index:
