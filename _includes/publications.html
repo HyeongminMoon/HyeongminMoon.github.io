@@ -72,6 +72,9 @@
     <div class="col-md-6">
         <img id="img" src="./assets/img/ade20k.jpg" alt="" width="90%"/>
         <input type="button" id="button1" onclick="predict();" value="demo"/>
+        <form method="post" enctype="multipart/form-data">
+        <input type="file" id="button2" onchange="changeimg(this);" accpet="image/*" value="upload image"/>
+        </form>
     </div>
     <div class="col-md-6">
         <canvas id="person">
@@ -80,6 +83,11 @@
 </div>
 
 <script>
+function changeimg(input) {
+    var file = input.files[0];
+    document.getElementById("img").src = URL.createObjectURL(file);
+    predict();
+}
     
 const loadModel = async () => {
   const modelName = 'ade20k';   // set to your preferred model, either `pascal`, `cityscapes` or `ade20k`
