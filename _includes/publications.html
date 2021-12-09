@@ -63,10 +63,12 @@
 </div>
     
 
+<h4 class="b" id="edge computing"><A href = "https://github.com/HyeongminMoon/U-2-Net_portrait_sketch">(2021) Edge computing </A></h4>
+
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/deeplab"></script>
 
-<img id="img" src="./assets/img/ade20k.jpg" alt=""/>
+<img id="img" src="ade20k.jpg" alt="" width="90%"/>
 <!-- width=500 height=227 -->
 <canvas id="person">
   
@@ -96,26 +98,23 @@ const img = document.getElementById('img');
 const predict = async () => {
     
     const model = await loadModel();
-    
-    for (let i = 0; i < 10; i++) {
-        console.time("predict time");
-        const output = await model.segment(img).then((output) =>{
-            console.timeEnd("predict time");
-            const {legend, height, width, segmentationMap} = output
-            console.log(`The predicted classes are ${JSON.stringify(legend)}`);
-            //             console.log(segmentationMap);
-            var canvas = document.getElementById('person');
-            //             canvas.style.width = '100%';
-            //             canvas.style.height = '100%';
-            canvas.width = width;
-            canvas.height = height;
-            console.log(width, height)
-            ctx = canvas.getContext('2d');
-            var imgdata = new ImageData(segmentationMap, width, height);
-            ctx.putImageData(imgdata, 0, 0);
-        });
-        
-    };
+
+    const output = await model.segment(img).then((output) =>{
+//         console.timeEnd("predict time");
+        const {legend, height, width, segmentationMap} = output
+//         console.log(`The predicted classes are ${JSON.stringify(legend)}`);
+        //             console.log(segmentationMap);
+        var canvas = document.getElementById('person');
+            canvas.style.width = '90%';
+            canvas.style.height = '90%';
+        canvas.width = width;
+        canvas.height = height;
+//         console.log(width, height)
+        ctx = canvas.getContext('2d');
+        var imgdata = new ImageData(segmentationMap, width, height);
+        ctx.putImageData(imgdata, 0, 0);
+    });
+
 };
 
 predict();
