@@ -68,13 +68,16 @@
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/deeplab"></script>
 
-<img id="img" src="./assets/img/ade20k.jpg" alt="" width="90%"/>
-<!-- width=500 height=227 -->
-<canvas id="person">
-  
-</canvas>
-
-<input type="button" id="button1" onclick="predict();" value="demo"/>
+<div class="row g-5 mb-5">
+    <div class="col-md-6">
+        <img id="img" src="./assets/img/ade20k.jpg" alt="" width="90%"/>
+        <input type="button" id="button1" onclick="predict();" value="demo"/>
+    </div>
+    <div class="col-md-6">
+        <canvas id="person">
+        </canvas>
+    </div>
+</div>
 
 <script>
     
