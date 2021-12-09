@@ -6,6 +6,7 @@
         <p><a href="{{ item.url }}">{{ item.name }}</a></p>
       {% endfor %}
     {% else %} -->
+    includes publications.html
     {% for item in site.data.publications.index %}
       <p><a href="{{ item.url }}">{{ item.name }}</a></p>
     {% endfor %}
