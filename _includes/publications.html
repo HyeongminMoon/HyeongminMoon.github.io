@@ -1,15 +1,16 @@
 <div class="row g-5 mb-5">
   <div>
     <h3 class="fw-bold border-bottom pb-3 mb-5">Main Projects</h3>
-<!--     {% if page.title == "Home" %}
+    {% if page.title == "Home" %}
+      includes publications.html home
       {% for item in site.data.publications.featured %}
         <p><a href="{{ item.url }}">{{ item.name }}</a></p>
       {% endfor %}
-    {% else %} -->
-    includes publications.html
-    {% for item in site.data.publications.index %}
-      <p><a href="{{ item.url }}">{{ item.name }}</a></p>
-    {% endfor %}
-<!--     {% endif %} -->
+    {% else %}
+      includes publications.html
+      {% for item in site.data.publications.index %}
+        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+      {% endfor %}
+    {% endif %}
   </div>
 </div>
