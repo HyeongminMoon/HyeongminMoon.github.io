@@ -17,7 +17,7 @@ And trademarks are classificated by ViennaCodes, but It couldn't explain the all
 So we need to make new classification table based on ViennaCodes.
 We tried to contain the all feature but some are removed due to accuracy.
 For example, the trademarks' viennacodes distribution is not flat because many trademark contain a Creature.
-<img src="/assets/img/dist.PNG" width="750px" height="250px" title="dist" alt="dist"></img>
+<img src="/assets/img/dist.png" width="750px" height="250px" title="dist" alt="dist"></img>
 
 So we define new rule for this and made a new classification table.
 
@@ -34,9 +34,9 @@ So we can calculate image silmilarity score between
 
 
 ### result samples
-<br><img src="/assets/img/sim1.PNG" width="400px" height="250px" title="sim1" alt="sim1"></img>
-<img src="/assets/img/sim2.PNG" width="400px" height="250px" title="sim2" alt="sim2"></img>
-<img src="/assets/img/sim3.PNG" width="400px" height="250px" title="sim3" alt="sim3"></img>
+<br><img src="/assets/img/sim1.png" width="400px" height="250px" title="sim1" alt="sim1"></img>
+<img src="/assets/img/sim2.png" width="400px" height="250px" title="sim2" alt="sim2"></img>
+<img src="/assets/img/sim3.png" width="400px" height="250px" title="sim3" alt="sim3"></img>
 <img src="https://user-images.githubusercontent.com/32811724/142619840-5c51e3bb-9ec6-44ee-a3bc-63b35ebf0211.png" width="400px" height="250px"></img><br/>
 
 
