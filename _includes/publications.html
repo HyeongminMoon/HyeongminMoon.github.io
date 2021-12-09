@@ -20,7 +20,9 @@
 
 <div class="row g-5 mb-5">
   <div class="col-md-6"> 
-      <h6> High-detailed Segmentation becomes Portrait sketch </h6>
+      <br></br>
+      <br></br>
+      <h5> High-detailed Segmentation becomes Portrait sketch </h5>
       <br></br>
       <p> The U-2Net is famous for segmetation model.</p>
       <p> It's model has a complex structure so it does segmetnation to the level that presents a strand of hair.</p>
@@ -59,7 +61,7 @@
   </div>
 </div>
 
-<h2 id="enhancement-of-portrait-sketchy">Enhancement of portrait sketchy</h2>
+<h5 id="enhancement-of-portrait-sketchy">Enhancement of portrait sketchy</h5>
 <p><a href="https://github.com/xuebinqin/U-2-Net">original repository</a> proposed using of portrait sketchy with <a href="https://github.com/yiranran/APDrawingGAN">APDrawingGAN dataset</a>, it is quite good for drawing <strong>portrait only</strong> but still it has bad performance, especially when it draws landscape.</p>
 <p><img src="https://user-images.githubusercontent.com/32811724/143389405-242a56ce-f099-4c4a-b1c0-473db3b138f7.png" alt="748066F02_1-17-TH-05-975_00310"></p>
 <p>So we enhanced it by using custom dataset and dataset transforms, such as random bluring, random affine, jittering head, jittering nearby human&#39;s outline.</p>
@@ -68,10 +70,10 @@
 <p><img src="https://user-images.githubusercontent.com/32811724/143390737-fadb6c55-101c-49da-8d68-6c62c501cc00.png" alt="744359F02_1-17-TH-04-780_00594"></p>
 <p>It became quite good, but we continued because we want to make it be lost more information such as face&amp;cloth detail, but keep the important line information.</p>
 <p><img src="https://user-images.githubusercontent.com/32811724/143391038-b7fc3ddd-53c4-4071-bd5a-ae3077e69485.png" alt="758050F02_1-18-TH-03-295_00425"></p>
-<h2 id="other-things">Other things</h2>
+<h5 id="other-things">More</h5>
 <ul>
-<li>Distributed GPU using (multi GPU on different computers)</li>
-<li>Batched inference</li>
+<li>If you want to see the enhancing processes, plese refer this repository</li>
+<li><A href = "https://github.com/HyeongminMoon/U-2-Net_portrait_sketch">(2021) Portrait sketch by improving segmentation model</A></li>
 </ul>
 
     
