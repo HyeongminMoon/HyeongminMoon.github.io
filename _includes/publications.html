@@ -152,7 +152,7 @@ const predict = async () => {
 <p> - For example, the trademarks' viennacodes distribution is not flat because many trademark contain a Creature.</p>
 <div style="text-align:center">
 <img src="./assets/img/dist.png" width="60%"></img>
-
+<br> </br>
 <h6> result samples </h6>
 <div style="text-align:center">
 <p><br><img src="./assets/img/det1.jpg" width="25%" title="det1" alt="det1"></img>
@@ -160,7 +160,7 @@ const predict = async () => {
 <img src="./assets/img/det3.jpg" width="25%" title="det3" alt="det3"></img><br/></p>
 </div>
 
-<div class="row g-5 mb-5">
+<div class="row g-5 mb-5" style="text-align:left">
     <div class="col-md-6">
         <br> </br>
         <h5> Cosine Similarity </h5>
@@ -174,10 +174,10 @@ const predict = async () => {
         <p> - Finally we got final Image Similarity score </p>
     </div>
     <div class="col-md-6">
-        <br><img src="./assets/img/sim1.png" width="45%"></img>
-        <img src="./assets/img/sim2.png" width="45%"></img></br>
-        <br><img src="./assets/img/sim3.png" width="45%"></img>
-        <img src="https://user-images.githubusercontent.com/32811724/142619840-5c51e3bb-9ec6-44ee-a3bc-63b35ebf0211.png" width="45%"></img></br>
+        <br><img src="./assets/img/sim1.png" width="49%"></img>
+        <img src="./assets/img/sim2.png" width="49%"></img></br>
+        <br><img src="./assets/img/sim3.png" width="49%"></img>
+        <img src="https://user-images.githubusercontent.com/32811724/142619840-5c51e3bb-9ec6-44ee-a3bc-63b35ebf0211.png" width="49%"></img></br>
     </div>
 </div>
 
@@ -188,6 +188,7 @@ const predict = async () => {
     <img src="https://user-images.githubusercontent.com/32811724/142619604-3c5aeaad-fa1d-4b18-b169-804314554c2e.png" width="60%">
 </div>
 
+<div class="row g-5 mb-5" style="text-align:left">
 <hr width = "90%" color = "black">
 <h5> Project Links </h5>
       {% for item in site.data.publications.featured %}
@@ -199,3 +200,4 @@ const predict = async () => {
         <p><a href="{{ item.url }}">{{ item.name }}</a></p>
       {% endfor %}
     {% endif %}
+</div>
