@@ -139,14 +139,15 @@ const predict = async () => {
 
 const demo_clear_img = new Image();
 demo_clear_img.src = "./assets/img/demo_clear.jpg"
-var canvas = document.getElementById('person'); 
-canvas.style.width = '90%';
-canvas.style.height = '90%';
-canvas.width = width;
-canvas.height = height;
-ctx = canvas.getContext('2d');
-ctx.drawImage(demo_clear_img, 0, 0)
-    
+demo_clear_img.onload = function(){
+    var canvas = document.getElementById('person'); 
+    canvas.style.width = '90%';
+    canvas.style.height = '90%';
+    canvas.width = width;
+    canvas.height = height;
+    ctx = canvas.getContext('2d');
+    ctx.drawImage(demo_clear_img, 0, 0)
+}
 // predict();
 </script>
 
