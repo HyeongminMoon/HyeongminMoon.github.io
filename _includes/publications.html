@@ -78,7 +78,6 @@
     </div>
     <div class="col-md-6">
         <canvas id="person">
-            <img id="demo_clear" src="./assets/img/demo_clear.jpg" alt="" width="90%"/>
         </canvas>
     </div>
 </div>
@@ -89,7 +88,8 @@
 <p> - Now what we all need is preparing custom model, being lighten(using quantization) model, load model!</p>
 <p> - Above demo don't need server side operation, it uses your computer resource, CPU and GPU. (So you can feel your computer get lag when you start demo)</p>
 <p> - Unfortunately, there is a chache problem with processing the gpu now, so if your gpu capacity is small, it can be shutdown when executing the demo. So now, it is only allowed to work with cpu.
-
+asdfasdf
+    
 <script>
 function changeimg(input) {
     var file = input.files[0];
@@ -114,6 +114,15 @@ const img = document.getElementById('img');
 // console.log(pixels)
 // const input = tf.zeros([227, 500, 3]);
 // ...
+const demo_clear_img = new Image();
+demo_clear_img.src = "./assets/img/demo_clear.jpg"
+demo_clear_img.onload = function(){
+    var canvas = document.getElementById('person'); 
+    canvas.style.width = '90%';
+    canvas.style.height = '90%';
+    ctx = canvas.getContext('2d');
+    ctx.drawImage(demo_clear_img, 0, 0, '90%', '90%')
+}
     
 const predict = async () => {
     
@@ -137,17 +146,7 @@ const predict = async () => {
 
 };
 
-const demo_clear_img = new Image();
-demo_clear_img.src = "./assets/img/demo_clear.jpg"
-demo_clear_img.onload = function(){
-    var canvas = document.getElementById('person'); 
-    canvas.style.width = '90%';
-    canvas.style.height = '90%';
-    canvas.width = width;
-    canvas.height = height;
-    ctx = canvas.getContext('2d');
-    ctx.drawImage(demo_clear_img, 0, 0)
-}
+
 // predict();
 </script>
 
