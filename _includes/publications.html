@@ -81,6 +81,13 @@
         </canvas>
     </div>
 </div>
+<h5> This is how to use GPU without environment setting </h5>
+<p> - It is widely known that the operation speed is much faster if the deeplearning operations calculated in the gpu rather than cpu.</p>
+<p> - To use GPU we need CUDA/CuDNN setting but clients don't know how to install those and don't need to know.</p>
+<p> - In this situation, there is a good solution that use GPU without CUDA, is graphical backend such as WebGL. </p>
+<p> - Now what we all need is preparing custom model, being lighten(using quantization) model, load model!</p>
+<p> - Above demo don't need server side operation, it uses your computer resource, CPU and GPU. (So you can feel your computer get lag when you start demo)</p>
+<p> - Unfortunately, there is a chache problem with processing the gpu at the moment, so if your gpu capacity is small, it can be shutdown when executing the demo. So now, it is only allowed to work with cpu.
 
 <script>
 function changeimg(input) {
