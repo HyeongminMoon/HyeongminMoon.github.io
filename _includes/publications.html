@@ -63,7 +63,7 @@
 </div>
     
 
-<h4 class="b" id="edge computing"><A href = "https://github.com/HyeongminMoon/U-2-Net_portrait_sketch">(2021) Edge computing </A></h4>
+<h4 class="b" id="edge computing">(2021) Edge computing without CUDA, with quantization & tensorflow js</h4>
 
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/deeplab"></script>
@@ -137,12 +137,50 @@ const predict = async () => {
 };
 
 // predict();
- 
-
-    
 </script>
 
 
+<h4 class="b" id="frcnn"><A href = "https://github.com/HyeongminMoon/FRCNN_trademark_similarity">(2021) Rank search by image similarity and multi label classificaion </A></h4>
+
+
+<h5> Multi label classification </h5>
+<p> - One of the difficult trademark's feature is figurative. It could be expressed like "the heart shaping cat", "the S shaping chicken", 
+    etc. </p>
+<p> - And trademarks are classificated by ViennaCodes, but It couldn't explain the all image appearance.</p>
+<p> - So we need to make new classification table based on ViennaCodes.</p>
+<p> - We tried to contain the all feature but some are removed due to accuracy. </p>
+<p> - For example, the trademarks' viennacodes distribution is not flat because many trademark contain a Creature.</p>
+<img src="./assets/img/dist.png" width="90%"></img>
+
+<h6> result samples </h6>
+<p><br><img src="./assets/img/det1.jpg" width="30%" title="det1" alt="det1"></img>
+<img src="./assets/img/det2.jpg" width="30%" title="det2" alt="det2"></img>
+<img src="./assets/img/det3.jpg" width="30%" title="det3" alt="det3"></img><br/></p>
+
+<div class="row g-5 mb-5">
+    <div class="col-md-6">
+        <br> </br>
+        <h5> Cosine Similarity </h5>
+        <p> - We transfer learned pretrained model efficientnet-b0 with triplet loss. </p>
+        <p> - To attach triplet loss, we made triple pair dataset by above ViennaCode based trademark classification rules, 
+            select two **Similar** images which has same label and one **Different** images which is selected randomly </p>
+        <p> - And we calculated the Cosine Similarity from it's final fully connected vectors.</p>
+        <br> </br>
+        <h5> Image Similarity </h5>
+        <p> - And again we mixed the results with above multi label classification score. </p>
+        <p> - Finally we got final Image Similarity score </p>
+    </div>
+    <div class="col-md-6">
+        
+    </div>
+</div>
+
+
+<p> - Now what we all need is preparing custom model, being lighten(using quantization) model, load model!</p>
+<p> - Above demo don't need server side operation, it uses your computer resource, CPU and GPU. (So you can feel your computer get lag when you start demo)</p>
+<p> - Unfortunately, there is a chache problem with processing the gpu now, so if your gpu capacity is small, it can be shutdown when executing the demo. So now, it is only allowed to work with cpu.
+
+    
 
 <hr width = "90%" color = "black">
 <h5> Project Links </h5>
