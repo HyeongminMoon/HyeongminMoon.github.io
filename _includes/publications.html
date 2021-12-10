@@ -115,7 +115,6 @@ const img = document.getElementById('img');
 // ...
 var canvas = document.getElementById('person');
 canvas.style.width = '90%';
-canvas.style.height = '90%';
 ctx = canvas.getContext('2d');
 const demo_clear_img = new Image();
 demo_clear_img.src = "/assets/img/demo_clear.jpg";
@@ -134,7 +133,6 @@ const predict = async () => {
         //             console.log(segmentationMap);
         var canvas = document.getElementById('person');
             canvas.style.width = '90%';
-            canvas.style.height = '90%';
         canvas.width = width;
         canvas.height = height;
 //         console.log(width, height)
