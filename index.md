@@ -4,7 +4,7 @@ title: "Home"
 ---
 I am a AI engineer mainly researching about computer vision.
 
-For me, A **Development** means a **solution** to solve a **problem** when it is given. And it doesn't need to happen as a code, even doesn't need to use a computer. If the actual action is more appropriate than the code, I will adopt it.
+For me, A **Development** means **all methods of solution** to solve a **problem**. It doesn't need to happen as a code, even doesn't need to use a computer. If the physical action is better than code, I will adopt it.
 <br> <br />
 
 #### *Tech Stack*
