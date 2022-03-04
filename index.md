@@ -8,7 +8,7 @@ For me, A **Development** means **all methods of solution** to solve a **problem
 <br> <br />
 
 #### *Tech Stack*
-* (Language/Script) &nbsp; **Python** &nbsp; C/C++/C# &nbsp; SQL
+* (Language/Script) &nbsp; **Python** &nbsp; C/C++/C# &nbsp; SQL &nbsp; JavaScript
 * (Vision/AI Tool) &nbsp; **Pytorch OpenCV** &nbsp; Tensorflow &nbsp; Onnx &nbsp; tfjs
 * (Platform/Framework) &nbsp; **Django** &nbsp; **Flask** &nbsp; **MySQL** &nbsp; Redis &nbsp; Nodejs &nbsp; React &nbsp;
 * (Server/Linux) &nbsp; **GCP** &nbsp; **Docker** &nbsp; Kubernetes &nbsp; Nginx &nbsp; Gunicorn &nbsp; **CLI(+Shell Script)**
